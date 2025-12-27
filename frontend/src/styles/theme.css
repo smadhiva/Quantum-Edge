@@ -1,0 +1,93 @@
+/* Finance Copilot Custom Theme: Black-White-Violet */
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-alt: #18181b;
+  --color-surface: #22223b;
+  --color-white: #fff;
+  --color-violet: #7c3aed;
+  --color-violet-dark: #5b21b6;
+  --color-text: #e5e5e5;
+  --color-text-muted: #a1a1aa;
+  --color-border: #27272a;
+  --color-positive: #22d3ee;
+  --color-negative: #f43f5e;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-violet);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px 0 rgba(124,58,237,0.08);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--color-violet);
+  color: var(--color-white);
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: var(--color-violet-dark);
+}
+
+.input {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+.input:focus {
+  border-color: var(--color-violet);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  border-radius: 0.5em;
+  font-size: 0.85em;
+  background: var(--color-violet);
+  color: var(--color-white);
+  margin-right: 0.3em;
+}
+
+.text-positive {
+  color: var(--color-positive) !important;
+}
+.text-negative {
+  color: var(--color-negative) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-violet-dark);
+  border-radius: 8px;
+}

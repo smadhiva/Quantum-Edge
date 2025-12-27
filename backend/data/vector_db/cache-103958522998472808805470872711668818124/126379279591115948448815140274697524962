@@ -1,0 +1,23 @@
+Market Analysis Framework
+
+Technical Analysis Indicators:
+- Moving Averages: 20-day, 50-day, and 200-day SMAs show trend direction
+- RSI (Relative Strength Index): Measures momentum, overbought above 70, oversold below 30
+- MACD: Moving Average Convergence Divergence shows trend changes
+- Support/Resistance: Price levels where stocks tend to stop falling or rising
+- Volume: Confirms price movements when trading activity increases
+
+Fundamental Analysis Metrics:
+- Revenue Growth: Year-over-year increase in company sales
+- Profit Margins: Net income as percentage of revenue
+- Debt-to-Equity: Company's leverage and financial health
+- Return on Equity (ROE): Profitability relative to shareholder equity
+- P/E Ratio: Valuation compared to earnings
+- Free Cash Flow: Cash available after operating expenses and capital expenditures
+
+Sector Analysis:
+- Technology: High growth, innovation-driven, sensitive to interest rates
+- Financials: Tied to interest rates and economic cycles
+- Healthcare: Defensive, stable demand, regulatory risks
+- Energy: Commodity-dependent, cyclical, geopolitical sensitivity
+- Consumer Discretionary: Economic cycle sensitive, tied to consumer confidence

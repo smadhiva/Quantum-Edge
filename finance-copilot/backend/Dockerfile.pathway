@@ -1,0 +1,25 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy Pathway-specific code
+COPY pathway_engine/ ./pathway_engine/
+COPY config.py .
+
+# Create data directories
+RUN mkdir -p /app/data/documents /app/data/vector_store
+
+# Run Pathway streaming service
+CMD ["python", "-m", "pathway_engine.streams"]

@@ -11,8 +11,8 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables"""
     
     # API Keys
-    gemini_api_key: str = "AIzaSyDMgAhfKIwe_xEarHd-BnDE13UjF2z0gKI"
-    alpha_vantage_api_key: str = "UL594TPTS0ZDG3RT"
+    gemini_api_key: str = ""
+    alpha_vantage_api_key: str = ""
     openai_api_key: str = ""
     
     # Database

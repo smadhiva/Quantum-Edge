@@ -21,8 +21,8 @@ class PathwayConfig:
     CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
     
     # API Keys - FIXED: Added proper fallback values
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDMgAhfKIwe_xEarHd-BnDE13UjF2z0gKI")
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
     
     @classmethod
     def ensure_dirs(cls):
